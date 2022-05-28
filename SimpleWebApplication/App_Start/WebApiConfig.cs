@@ -18,6 +18,9 @@ namespace SimpleWebApplication
             //To enable Basic Authentication for entire web application
             //config.Filters.Add(new BasicAuthenticationAttribute());
 
+            //Enable RequireHTTPSAttribute filter
+            config.Filters.Add(new CustomRequireHttpsAttribute());
+
             // Web API routes
             config.MapHttpAttributeRoutes();
 
