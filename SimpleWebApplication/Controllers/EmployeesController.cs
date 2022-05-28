@@ -49,7 +49,7 @@ namespace SimpleWebApplication.Controllers
                 }
                 else
                 {
-                    return Request.CreateResponse(HttpStatusCode.NotFound, "Employee with ID " + id.ToString() + "Not Found");
+                    throw new Exception(String.Format("No Employee Found with ID={0}",id));
                 }
             }
         }

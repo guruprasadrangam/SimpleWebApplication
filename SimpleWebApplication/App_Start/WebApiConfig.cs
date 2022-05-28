@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json.Serialization;
 using SimpleWebApplication.BasicAuthentication;
+using SimpleWebApplication.Filters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace SimpleWebApplication
 
             //Enable RequireHTTPSAttribute filter
             config.Filters.Add(new CustomRequireHttpsAttribute());
-
+            config.Filters.Add(new CustomExceptionFilter());
             // Web API routes
             config.MapHttpAttributeRoutes();
 
