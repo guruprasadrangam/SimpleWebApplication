@@ -1,0 +1,5 @@
+2022-05-28 18:19:18.5664|INFO|SimpleWebApplication.Controllers.EmployeesController|GetEmployeeById action method started   28-05-2022 18:19:18
+2022-05-28 18:21:48.8792|INFO|SimpleWebApplication.Controllers.EmployeesController|
+GetEmployeeById action method started   28-05-2022 18:21:48
+2022-05-28 18:21:54.7131|INFO|SimpleWebApplication.Controllers.EmployeesController|
+GetEmployeeById action method completed   28-05-2022 18:21:54

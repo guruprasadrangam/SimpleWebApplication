@@ -7,12 +7,14 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using NLog;
 
 namespace SimpleWebApplication.Controllers
 {
     [Authorize]
     public class EmployeesController : ApiController
     {
+        private static Logger logger = LogManager.GetCurrentClassLogger();
         public HttpResponseMessage GetAllEmployees()
         {
             List<Employee> employees = new List<Employee>();
@@ -34,6 +36,7 @@ namespace SimpleWebApplication.Controllers
         }
         public HttpResponseMessage GetEmployeeById(int id)
         {
+            logger.Info(Environment.NewLine + "GetEmployeeById action method started" + "   " + DateTime.Now.ToString());
             Employee employee = new Employee();
             using (EmployeeDBContext dBContext = new EmployeeDBContext())
             {
@@ -45,6 +48,7 @@ namespace SimpleWebApplication.Controllers
                     employee.LastName = result.LastName;
                     employee.Gender = result.Gender;
                     employee.Salary = Convert.ToDecimal(result.Salary);
+                    logger.Info(Environment.NewLine + "GetEmployeeById action method completed" + "   " + DateTime.Now.ToString());
                     return Request.CreateResponse(HttpStatusCode.OK, employee);
                 }
                 else

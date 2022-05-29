@@ -101,3 +101,5 @@ C:\Practice\WebAPI\SimpleWebApplication\SimpleWebApplication\bin\Microsoft.Owin.
 C:\Practice\WebAPI\SimpleWebApplication\SimpleWebApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
 C:\Practice\WebAPI\SimpleWebApplication\SimpleWebApplication\bin\Microsoft.Owin.Security.xml
 C:\Practice\WebAPI\SimpleWebApplication\SimpleWebApplication\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Practice\WebAPI\SimpleWebApplication\SimpleWebApplication\bin\NLog.dll
+C:\Practice\WebAPI\SimpleWebApplication\SimpleWebApplication\bin\NLog.xml
